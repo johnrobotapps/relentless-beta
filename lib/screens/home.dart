@@ -1,7 +1,8 @@
 
 
 import "package:flutter/material.dart";
-import "../navigation/buttons.dart" as navbuttons;
+import "../navigation/panelbuttons.dart" as navbuttons;
+
 
 
 final Color bgColorHomePanel = Colors.grey;
@@ -28,7 +29,6 @@ class HomeScreen extends StatelessWidget {
             bgColor: bgColorHomePanel,
             panelImage: "assets/images/exerciselibrary.jpg",
             buttonText: "Exercise Library",
-
         );
 
         final FoodJournalPanelButton = navbuttons.getPanelButton(
@@ -68,6 +68,7 @@ class HomeScreen extends StatelessWidget {
                     ),
 
                     Expanded(
+
                         flex:  2,
 
                         child: Container(
